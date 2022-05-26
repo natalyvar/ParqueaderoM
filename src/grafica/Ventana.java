@@ -292,7 +292,7 @@ public class Ventana extends javax.swing.JFrame {
     }
     public void salidaMotoo(){
         String placa = cjPlaca.getText();
-        JOptionPane.showMessageDialog(this, "Puede retirar su moto");
+       
          int numMinutos=0;
         double precioTotal=0;
         Scanner sc=new Scanner (System.in);
@@ -300,6 +300,7 @@ public class Ventana extends javax.swing.JFrame {
        numMinutos=sc.nextInt();
        precioTotal=calcularPrecio(numMinutos);
        System.out.println("Total a pagar "+precioTotal);
+        JOptionPane.showMessageDialog(this, "Puede retirar su moto");
     }
     
     public void habilitar(){
